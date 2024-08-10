@@ -1,0 +1,136 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    /* overflow: hidden; */
+
+}
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: #232323;
+    position: relative;
+    top: 0%;
+    overflow: hidden;
+}
+input{
+    height: 3vw;
+    width: 37vw;
+    border-radius: 20px;
+    padding-left: 1vw;
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+    border:  solid black 3px;
+    font-size: larger;
+    text-transform: capitalize;
+}
+
+.add{
+    border: none;
+    position:absolute;
+    bottom: 5%;
+    right: 32%;
+    height: 3.2vw;
+    width: 7vw;
+    border-radius: 20px;
+    font-size: larger;
+    font-family: cursive;
+    background-color: rgb(71, 221, 34);
+    
+}
+.remove{
+    border: none;
+    position:absolute;
+    bottom: 5%;
+    right: 23%;
+    height: 3.2vw;
+    width: 7vw;
+    border-radius: 20px;
+    font-size: larger;
+    font-family: cursive;
+    background-color:rgba(241, 19, 19, 0.884) ;
+}
+
+.listitems{
+    color: white;
+    font-size: 2.7vw;
+    margin-left:2vw;
+    font-family: cursive;
+    text-transform: capitalize;
+    font-weight: 300;
+    height: 38vw;
+    width: 90%;
+    /* background-color: aqua; */
+    overflow:scroll;
+    overflow-wrap: break-word;
+    /* scrollbar-width: thin; */
+    /* scroll-behavior: smooth; */
+}
+
+.listitems::-webkit-scrollbar-thumb:hover{
+    
+    background-color: aquamarine;
+}
+.listitems::-webkit-scrollbar{
+    width: 10px;
+}
+.listitems::-webkit-scrollbar-thumb{
+      background: linear-gradient(pink,yellow,red,orange,rgb(182, 60, 81),yellowgreen,green,blue,violet,indigo) ;
+      border-radius: 10px;
+      border: 3px solid black;
+}
+
+@media  (max-width:800px){
+      .add{
+        height: 5vw;
+        width: 11vw;
+        font-size: 3vw;
+        right: 28%;
+        border: none;
+      }
+      .remove{
+        height: 5vw;
+        width: 15vw;
+        font-size: 3vw;
+        right: 10%;
+        border: none;
+      }
+      input{
+        height: 4.7vw;
+        width: 40vw;
+        left: 12%;
+        border: none;
+      }
+      
+    }
+
+    @media  (max-width:400px){
+        .add{
+          height: 10vw;
+          width: 17vw;
+          font-size: 3vw;
+          right: 28%;
+          border: none;
+        }
+        .remove{
+          height: 10vw;
+          width: 20vw;
+          font-size: 3vw;
+          right: 5%;
+          border: none;
+        }
+        input{
+          height: 10vw;
+          width: 46vw;
+          left: 5%;
+          border: none;
+        }
+        .listitems{
+            font-size: 5vw;
+        }
+        
+      }    
+
+
